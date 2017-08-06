@@ -1,2 +1,52 @@
-# node-experiments
-n00b
+# NodeExperiments
+Teaching myself NodeJS
+
+
+Lesson 1: all tutorials referring to the command "node" should instead use "nodejs". Got it.
+
+
+laptop setup:
+----------------
+jpinkham@TAZ04-MacBook-Pro ~ $ node --version
+v7.8.0
+jpinkham@TAZ04-MacBook-Pro ~ $ npm --version
+4.2.0
+
+No, wait:
+jpinkham@TAZ04-MacBook-Pro ~ $ npm install npm@latest -g
+jpinkham@TAZ04-MacBook-Pro ~ $ npm --version
+5.3.0
+
+==> Upgrading 1 outdated package, with result:
+node 8.2.1
+==> Upgrading node
+==> Downloading https://homebrew.bintray.com/bottles/node-8.2.1.sierra.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring node-8.2.1.sierra.bottle.tar.gz
+==> Using the sandbox
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+==> Summary
+🍺  /usr/local/Cellar/node/8.2.1: 4,151 files, 45.9MB
+jpinkham@TAZ04-MacBook-Pro ~ $ node --version
+v8.2.1
+
+
+versions as of 8/5:
+	nodejs - v8.2.1
+	npm    - v5.3.0
+
+
+dev VPS setup:
+------------------
+jpinkham@codegirl ~ $ nodejs --version
+v4.2.6
+
+
+jpinkham@codegirl ~ $ npm --version
+/usr/bin/env: 'node': No such file or directory
+
+
+Hmm. Upgrading VPS from Ubuntu 16.04 to 17.04
+
