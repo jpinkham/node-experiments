@@ -1,8 +1,6 @@
 # NodeExperiments
-Teaching myself NodeJS
+Teaching myself Node.js
 
-
-Lesson 1: all tutorials referring to the command "node" should instead use "nodejs". Got it.
 
 
 laptop setup:
@@ -38,15 +36,6 @@ versions as of 8/5:
 	npm    - v5.3.0
 
 
-dev VPS setup:
-------------------
-jpinkham@codegirl ~ $ nodejs --version
-v4.2.6
-
-
-jpinkham@codegirl ~ $ npm --version
-/usr/bin/env: 'node': No such file or directory
-
-
-Hmm. Upgrading VPS from Ubuntu 16.04 to 17.04
-
+as of 8/12:
+	nodejs 	- v8.3.0
+	npm			- v5.3.0
