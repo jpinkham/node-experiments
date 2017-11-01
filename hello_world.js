@@ -1,3 +1,5 @@
+var listen_port = 9090;
+
 // requiring the HTTP interfaces in node
 var http = require('http');
 
@@ -10,8 +12,8 @@ http.createServer(function (req, res) {
   // print out Hello World
   res.end('Hello World, lookout here i come!\n');
 
-// use port 8080
-}).listen(8080);
+// set port to listen on 
+}).listen(listen_port);
 
 
-console.log('Jennifer, the server is running on port 8080.');
+console.log('Jennifer, the server is running on port ' , listen_port);
