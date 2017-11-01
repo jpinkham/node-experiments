@@ -1,8 +1,10 @@
 # NodeExperiments
 Teaching myself NodeJS
 
+11/1/2017: using node, request latitude and longitude from uer, then print the temp for that location, using NWS API
+File: weather.js
 
-Lesson 1: all tutorials referring to the command "node" should instead use "nodejs". Got it.
+
 
 
 laptop setup:
