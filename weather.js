@@ -2,6 +2,9 @@
 
 // Objective: Display current temp for the specified lat/long
 
+// TODO: add command line flags for: debug, help
+// TODO: update all debug output to require cli debug arg enabled
+
 
 // declare vars and set defaults
 var latitude     = 0;
@@ -20,15 +23,17 @@ latitude  = all_args[0];
 longitude = all_args[1];
 
 
-
-// ELSE if not specified, ask user for lat/long   TODO: get this working
+//TODO: get this working
+// ELSE if not specified, ask user for lat/long
 //prompt.get(['latitude','longitude'], function (error, result) {
 //	console.log('Command-line input received:');
 //	console.log('  latitude:  ' + result.latitude);
 //	console.log('  longitude: ' + result.longitude);
 //});
 
-// Validate user input: decimal numbers only (pos/neg) and > 0
+// Validate user input: 
+// test ideas: decimal numbers only (pos/neg), non-zero numbers
+
 //	If validation fails, show error and quit
 
 
@@ -40,10 +45,6 @@ weather_url = "https://api.weather.gov/points/" + latitude + "," + longitude + "
 // make request to weather API
 var request   = require('request');
 //request.debug = true; // verbose output of request and response
-
-
-// TEST with known good URL provided by NWS in their docs
-weather_url = 'https://api.weather.gov/points/39.0693,-94.6716/forecast';
 
 var request_options = {
 	url: weather_url,
